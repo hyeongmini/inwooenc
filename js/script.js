@@ -1,3 +1,7 @@
+if (window.AOS) {
+  AOS.init({ duration: 700, once: true, offset: 60 });
+}
+
 const navToggle = document.getElementById("navToggle");
 const siteNav = document.getElementById("siteNav");
 

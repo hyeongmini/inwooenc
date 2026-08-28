@@ -75,30 +75,11 @@ a { color: inherit; text-decoration: none; }
   color: #fff;
 }
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
-.hero-bg > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-bg > img, .hero-bg > video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(16,32,47,.45) 0%, rgba(16,32,47,.68) 100%);
-}
-
-/* 도로 위를 달리는 트럭 애니메이션 (자체 제작 SVG) */
-@keyframes truckDrive {
-  0%   { transform: translateX(-140px); }
-  100% { transform: translateX(calc(100vw + 140px)); }
-}
-.hero-truck {
-  position: absolute;
-  left: 0;
-  bottom: 18px;
-  width: 90px;
-  height: 45px;
-  z-index: 1;
-  opacity: .9;
-  animation: truckDrive 14s linear infinite;
-}
-@media (max-width: 640px) {
-  .hero-truck { display: none; }
 }
 .hero-content {
   position: relative;
@@ -240,11 +221,13 @@ a { color: inherit; text-decoration: none; }
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 32px 28px;
+  overflow: hidden;
 }
+.card-photo { width: 100%; aspect-ratio: 3 / 2; overflow: hidden; }
+.card-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .card-icon { display: inline-flex; width: 48px; height: 48px; color: var(--accent-dark); margin-bottom: 20px; }
-.card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
-.card p { font-size: 14px; color: var(--ink-soft); line-height: 1.7; }
+.card h3 { font-size: 18px; font-weight: 700; margin: 24px 28px 10px; }
+.card p { font-size: 14px; color: var(--ink-soft); line-height: 1.7; margin: 0 28px 28px; }
 
 /* ---------- People values ---------- */
 .section-people { background: var(--bg); }
@@ -253,11 +236,13 @@ a { color: inherit; text-decoration: none; }
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 32px 28px;
+  overflow: hidden;
 }
-.value-mark { display: block; font-size: 13px; font-weight: 700; color: var(--accent); margin-bottom: 12px; letter-spacing: 0.1em; }
-.value h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
-.value p { font-size: 14px; color: var(--ink-soft); }
+.value-photo { width: 100%; aspect-ratio: 3 / 2; overflow: hidden; }
+.value-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.value-mark { display: block; font-size: 13px; font-weight: 700; color: var(--accent); margin: 24px 28px 12px; letter-spacing: 0.1em; }
+.value h3 { font-size: 18px; font-weight: 700; margin: 0 28px 10px; }
+.value p { font-size: 14px; color: var(--ink-soft); margin: 0 28px 28px; }
 
 /* ---------- Welfare ---------- */
 .section-welfare { background: var(--card-bg); }

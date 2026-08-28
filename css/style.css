@@ -236,7 +236,7 @@ a { color: inherit; text-decoration: none; }
 .value h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
 .value p { font-size: 14px; color: var(--ink-soft); }
 
-/* ---------- Welfare (placeholder) ---------- */
+/* ---------- Welfare ---------- */
 .section-welfare { background: var(--card-bg); }
 .welfare-note {
   padding: 24px;
@@ -244,6 +244,30 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid #cfe4f8;
   border-radius: 14px;
   font-size: 14px;
+  color: var(--ink-soft);
+}
+.welfare-grid { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.welfare-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 22px;
+  transition: box-shadow .2s, border-color .2s;
+}
+.welfare-item:hover { border-color: var(--accent); box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+.welfare-icon { display: inline-flex; flex-shrink: 0; width: 34px; height: 34px; color: var(--accent-dark); }
+.welfare-item p { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+.welfare-final-note {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+  padding: 20px 24px;
+  background: #fdf6ec;
+  border: 1px solid #f0dcc0;
+  border-radius: 14px;
+  font-size: 13px;
   color: var(--ink-soft);
 }
 
@@ -261,6 +285,7 @@ a { color: inherit; text-decoration: none; }
   .value-grid { grid-template-columns: 1fr; gap: 28px; }
   .location-grid { grid-template-columns: 1fr; gap: 20px; }
   .hero h1 { font-size: 30px; }
+  .welfare-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
@@ -281,4 +306,5 @@ a { color: inherit; text-decoration: none; }
   .nav-toggle { display: flex; }
   .hero-content { padding: 72px 24px; }
   .hero h1 { font-size: 26px; }
+  .welfare-grid { grid-template-columns: 1fr; }
 }

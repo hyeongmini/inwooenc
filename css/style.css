@@ -57,11 +57,11 @@ a { color: inherit; text-decoration: none; }
   padding: 14px 24px;
 }
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo-mark { height: 32px; }
+.logo-mark { height: 58px; }
 .logo-mark img { height: 100%; width: auto; display: block; }
 
 .site-nav { display: flex; gap: 32px; }
-.site-nav a { font-size: 15px; font-weight: 600; color: var(--ink-soft); transition: color .15s; }
+.site-nav a { font-size: 15px; font-weight: 500; color: var(--ink-soft); transition: color .15s; }
 .site-nav a:hover, .site-nav a.active { color: var(--accent-dark); }
 
 .nav-toggle {
@@ -265,8 +265,9 @@ body.home main { padding-top: 0; }
   font-size: 14px;
 }
 .timeline-item:last-child { border-bottom: none; padding-bottom: 0; }
-.timeline-date { width: 84px; flex-shrink: 0; font-weight: 800; color: var(--accent-dark); }
-.timeline-desc { color: var(--ink); }
+.timeline-item { align-items: center; }
+.timeline-date { width: 140px; flex-shrink: 0; font-family: "Quicksand", "Noto Sans KR", sans-serif; font-size: 44px; font-weight: 700; color: var(--ink); }
+.timeline-desc { font-family: "Quicksand", "Noto Sans KR", sans-serif; font-size: 13px; color: var(--ink); }
 
 /* ---- Partner section: dark navy band with real logos ---- */
 .partner-section {
@@ -378,19 +379,9 @@ body.home main { padding-top: 0; }
   padding: 24px 22px;
   transition: box-shadow .2s, border-color .2s;
 }
-.welfare-item:hover { border-color: var(--accent); box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
-.welfare-icon { display: inline-flex; flex-shrink: 0; width: 34px; height: 34px; color: var(--accent-dark); }
+.welfare-item:hover { border-color: #e8821c; box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+.welfare-icon { display: inline-flex; flex-shrink: 0; width: 34px; height: 34px; color: #e8821c; }
 .welfare-item p { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
-.welfare-final-note {
-  grid-column: 1 / -1;
-  margin-top: 4px;
-  padding: 20px 24px;
-  background: #fdf6ec;
-  border: 1px solid #f0dcc0;
-  border-radius: 14px;
-  font-size: 13px;
-  color: var(--ink-soft);
-}
 
 /* ---------- Footer (참고 사이트처럼 좌: 로고 / 우: 회사정보 2단 구성) ---------- */
 .site-footer { background: #ffffff; color: var(--ink); padding: 50px 24px 0; border-top: 1px solid var(--border); }

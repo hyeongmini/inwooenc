@@ -1,5 +1,5 @@
 if (window.AOS) {
-  AOS.init({ duration: 700, once: true, offset: 60 });
+  AOS.init({ duration: 700, once: false, offset: 60 });
 }
 
 // Homepage-only: header is transparent over the fullscreen hero video and
@@ -13,6 +13,18 @@ if (document.body.classList.contains("home") && siteHeader) {
   };
   toggleHeader();
   window.addEventListener("scroll", toggleHeader, { passive: true });
+}
+
+// 파트너사 로고: 참고 사이트처럼 한 번에 하나씩 순차적으로 전환
+const partnerCarousel = document.getElementById("partnerCarousel");
+if (partnerCarousel) {
+  const slides = partnerCarousel.querySelectorAll(".partner-slide");
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 2200);
 }
 
 const navToggle = document.getElementById("navToggle");

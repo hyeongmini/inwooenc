@@ -284,24 +284,27 @@ body.home main { padding-top: 0; }
   margin-bottom: 16px;
 }
 .partner-intro { margin-bottom: 40px; color: #ffffff; font-size: 14px; }
-.partner-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.partner-logo {
-  width: 180px;
-  height: 180px;
+/* 파트너사 로고: 참고 사이트처럼 한 번에 하나씩 순차적으로 지나가는 캐러셀 */
+.partner-carousel {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
   border-radius: 50%;
   background: #ffffff;
+}
+.partner-slide {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  flex-shrink: 0;
+  padding: 36px;
+  opacity: 0;
+  transition: opacity .6s ease;
 }
-.partner-logo img { width: 100%; height: 100%; object-fit: contain; }
+.partner-slide.active { opacity: 1; }
+.partner-slide img { width: 100%; height: 100%; object-fit: contain; }
 
 .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 56px; }
 .location-panel {
@@ -368,20 +371,13 @@ body.home main { padding-top: 0; }
   font-size: 14px;
   color: var(--ink-soft);
 }
-.welfare-grid { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.welfare-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  background: var(--bg);
-  border: 1px solid var(--border);
+.welfare-figure {
+  margin-top: 40px;
   border-radius: 16px;
-  padding: 24px 22px;
-  transition: box-shadow .2s, border-color .2s;
+  overflow: hidden;
+  border: 1px solid var(--border);
 }
-.welfare-item:hover { border-color: #e8821c; box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
-.welfare-icon { display: inline-flex; flex-shrink: 0; width: 34px; height: 34px; color: #e8821c; }
-.welfare-item p { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+.welfare-figure img { width: 100%; height: auto; display: block; }
 
 /* ---------- Footer (참고 사이트처럼 좌: 로고 / 우: 회사정보 2단 구성) ---------- */
 .site-footer { background: #ffffff; color: var(--ink); padding: 50px 24px 0; border-top: 1px solid var(--border); }

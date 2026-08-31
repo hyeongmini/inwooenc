@@ -259,14 +259,26 @@ body.home main { padding-top: 0; }
 .timeline { display: flex; flex-direction: column; }
 .timeline-item {
   display: flex;
-  gap: 24px;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 14px;
+  align-items: center;
+  gap: 40px;
+  padding: 28px 0;
 }
-.timeline-item:last-child { border-bottom: none; padding-bottom: 0; }
-.timeline-item { align-items: center; }
-.timeline-date { width: 140px; flex-shrink: 0; font-family: "Quicksand", "Noto Sans KR", sans-serif; font-size: 44px; font-weight: 700; color: var(--ink); }
+.timeline-year {
+  width: 150px;
+  flex-shrink: 0;
+  font-family: "Quicksand", "Noto Sans KR", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.timeline-month {
+  width: 36px;
+  flex-shrink: 0;
+  font-family: "Quicksand", "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
 .timeline-desc { font-family: "Quicksand", "Noto Sans KR", sans-serif; font-size: 13px; color: var(--ink); }
 
 /* ---- Partner section: dark navy band with real logos ---- */

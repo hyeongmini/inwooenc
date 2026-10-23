@@ -4,84 +4,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>사업영역 | (주)인우이엔씨</title>
-<meta name="description" content="Pavement 산업을 중심으로 한 인우이엔씨의 사업 영역 - Asphalt Concrete, Asphalt, Viatop">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Quicksand:400,700">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" href="css/style.css">
+<meta name="description" content="인우이엔씨 사업영역 — Asphalt Concrete, Asphalt, Viatop">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,800&family=Montserrat:500,700,800&display=swap">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
-
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
-    <a href="index.html" class="logo">
-      <span class="logo-mark" aria-hidden="true">
-        <img src="img/logo.png" alt="INWOO ENC">
-      </span>
-    </a>
-    <nav class="site-nav" id="siteNav">
-      <a href="about.html">소개</a>
-      <a href="business.html" class="active">사업영역</a>
-      <a href="people.html">인재상</a>
-      <a href="welfare.html">복지제도</a>
-    </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="index.html" class="logo" aria-label="인우이엔씨 홈"><img src="img/logo.png" alt="INWOO ENC"></a>
+    <div class="header-right">
+      <nav class="site-nav">
+        <a href="about.html">소개</a>
+        <a href="business.html" class="active">사업영역</a>
+        <a href="people.html">인재상</a>
+        <a href="welfare.html">복지제도</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="전체 메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="전체 메뉴">
+  <button class="menu-close" id="menuClose" aria-label="메뉴 닫기">×</button>
+  <nav class="menu-list">
+    <a href="about.html"><small>ABOUT</small>소개</a>
+    <a href="business.html"><small>BUSINESS</small>사업영역</a>
+    <a href="people.html"><small>PEOPLE</small>인재상</a>
+    <a href="welfare.html"><small>BENEFITS</small>복지제도</a>
+  </nav>
+  <div class="menu-contact">서울특별시 영등포구 버드나루로 84, 제일빌딩 16층<br>대표전화 02-2676-2539 &nbsp;|&nbsp; 팩스 02-2676-2855</div>
+</div>
 
 <main>
+<section class="sub-visual" style="background-image:url('img/business-asphalt.jpg');background-position:center 55%">
+  <div class="inner"><h1>사업영역</h1><p>Pavement 산업을 중심으로 한 사업 영역</p></div>
+  <div class="crumb"><a href="index.html">HOME</a> &nbsp;&gt;&nbsp; <b>사업영역</b></div>
+</section>
+<nav class="sub-tabs"><div class="wrap"><a href="#ascon">Asphalt Concrete</a><a href="#asphalt">Asphalt</a><a href="#viatop">Viatop</a></div></nav>
 
-  <section class="page-banner">
-    <div class="page-banner-content" data-aos="fade-up">
-      <h1>Pavement 산업을 중심으로 한<br>사업 영역</h1>
-    </div>
-  </section>
-
-  <section class="section section-business">
-    <div class="section-inner">
-      <div class="biz-block" data-aos="fade-up">
-        <div class="biz-photo"><img src="img/business-ascon.jpg" alt="아스팔트 포장 시공 현장"></div>
-        <div class="biz-text">
-          <h3>Asphalt Concrete (Ascon)</h3>
-          <p>인우이엔씨는 아스팔트와 콘크리트를 혼합한 포장재인 아스콘을 인천공장에서 직접 제조 및 판매하고 있습니다. 일반 아스콘, 개질 아스콘 등 다양한 아스콘을 통해 많은 고객들의 Needs를 만족시키며 전국의 도로에 납품하고 있습니다.</p>
-        </div>
-      </div>
-      <div class="biz-block" data-aos="fade-up" data-aos-delay="100">
-        <div class="biz-photo"><img src="img/business-asphalt.jpg" alt="아스팔트 유통용 탱크로리 차량"></div>
-        <div class="biz-text">
-          <h3>Asphalt</h3>
-          <p>SK에너지(주)와 아스팔트 판매대리점 계약을 맺어 고품질의 다양한 아스팔트 제품을 고객에게 신속, 정확하게 공급하고 있습니다.</p>
-        </div>
-      </div>
-      <div class="biz-block" data-aos="fade-up" data-aos-delay="200">
-        <div class="biz-photo"><img src="img/business-viatop.jpg" alt="아스팔트 골재 클로즈업"></div>
-        <div class="biz-text">
-          <h3>Viatop</h3>
-          <p>인우이엔씨는 독일의 JRS社로부터 아스팔트 성능 개선용 첨가제인 VIATOP을 수입 및 유통하여 국내 도로의 고품질화에 기여하고 있습니다.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+<section class="blk"><div class="wrap">
+  <div class="biz-block rv" id="ascon">
+    <div class="biz-photo"><img src="img/business-ascon.jpg" alt="아스팔트 포장 시공 현장"></div>
+    <div class="biz-text"><span class="biz-no">01</span><h3>Asphalt Concrete (Ascon)</h3><p>인우이엔씨는 아스팔트와 콘크리트를 혼합한 포장재인 아스콘을 인천공장에서 직접 제조 및 판매하고 있습니다. 일반 아스콘, 개질 아스콘 등 다양한 아스콘을 통해 많은 고객들의 Needs를 만족시키며 전국의 도로에 납품하고 있습니다.</p></div>
+  </div>
+  <div class="biz-block rv" id="asphalt">
+    <div class="biz-photo"><img src="img/business-asphalt.jpg" alt="아스팔트 유통용 탱크로리 차량"></div>
+    <div class="biz-text"><span class="biz-no">02</span><h3>Asphalt</h3><p>SK에너지(주)와 아스팔트 판매대리점 계약을 맺어 고품질의 다양한 아스팔트 제품을 고객에게 신속, 정확하게 공급하고 있습니다.</p></div>
+  </div>
+  <div class="biz-block rv" id="viatop">
+    <div class="biz-photo"><img src="img/business-viatop.jpg" alt="아스팔트 골재 클로즈업"></div>
+    <div class="biz-text"><span class="biz-no">03</span><h3>Viatop</h3><p>인우이엔씨는 독일의 JRS社로부터 아스팔트 성능 개선용 첨가제인 VIATOP을 수입 및 유통하여 국내 도로의 고품질화에 기여하고 있습니다.</p></div>
+  </div>
+</div></section>
 </main>
-
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <div class="footer-logo">INWOO ENC CO., LTD</div>
-      <img class="footer-logo-mark" src="img/logo-gray.png" alt="INWOO ENC">
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div class="footer-logo">INWOO ENC CO., LTD<br><img src="img/logo.png" alt=""></div>
+      <div class="footer-links"><a href="about.html#location">오시는 길</a></div>
     </div>
-    <div class="footer-right">
-      <p>(주)인우이엔씨 &nbsp;|&nbsp; 대표자: 이지익 &nbsp;|&nbsp; 사업자등록번호: 312-81-35304</p>
-      <p>서울시 영등포구 버드나루로 84, 제일빌딩 16층</p>
-      <p>대표전화 02-2676-2539 &nbsp;|&nbsp; 팩스 02-2676-2855</p>
+    <div class="footer-info">
+      <div>
+        <strong>(주)인우이엔씨</strong> &nbsp;|&nbsp; 대표자: 이지익 &nbsp;|&nbsp; 사업자등록번호: 312-81-35304<br>
+        서울시 영등포구 버드나루로 84, 제일빌딩 16층<br>
+        대표전화 02-2676-2539 &nbsp;|&nbsp; 팩스 02-2676-2855
+      </div>
+      <div class="footer-copy">© 2026 INWOO ENC CO., LTD. All rights reserved.</div>
     </div>
   </div>
-  <div class="footer-inner"><p class="footer-copy">© 2026 INWOO ENC CO., LTD. All rights reserved.</p></div>
 </footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js?v=4"></script>
 </body>
 </html>

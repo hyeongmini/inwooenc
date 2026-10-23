@@ -5,89 +5,106 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>(주)인우이엔씨 | INWOO ENC</title>
 <meta name="description" content="PAVEMENT 산업의 경험과 신뢰를 바탕으로 미래를 만들어가는 인우이엔씨">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Quicksand:400,700">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,800&family=Montserrat:500,700,800&display=swap">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
-<body class="home">
-
+<body>
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
-    <a href="index.html" class="logo">
-      <span class="logo-mark" aria-hidden="true">
-        <img src="img/logo.png" alt="INWOO ENC">
-      </span>
-    </a>
-    <nav class="site-nav" id="siteNav">
-      <a href="about.html">소개</a>
-      <a href="business.html">사업영역</a>
-      <a href="people.html">인재상</a>
-      <a href="welfare.html">복지제도</a>
-    </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="index.html" class="logo" aria-label="인우이엔씨 홈"><img src="img/logo.png" alt="INWOO ENC"></a>
+    <div class="header-right">
+      <nav class="site-nav">
+        <a href="about.html">소개</a>
+        <a href="business.html">사업영역</a>
+        <a href="people.html">인재상</a>
+        <a href="welfare.html">복지제도</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="전체 메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
+<div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="전체 메뉴">
+  <button class="menu-close" id="menuClose" aria-label="메뉴 닫기">×</button>
+  <nav class="menu-list">
+    <a href="about.html"><small>ABOUT</small>소개</a>
+    <a href="business.html"><small>BUSINESS</small>사업영역</a>
+    <a href="people.html"><small>PEOPLE</small>인재상</a>
+    <a href="welfare.html"><small>BENEFITS</small>복지제도</a>
+  </nav>
+  <div class="menu-contact">서울특별시 영등포구 버드나루로 84, 제일빌딩 16층<br>대표전화 02-2676-2539 &nbsp;|&nbsp; 팩스 02-2676-2855</div>
+</div>
 
 <main>
+<section class="hero" id="heroSlider">
+  <div class="slide active">
+    <div class="slide-bg"><video autoplay muted loop playsinline poster="img/hero.jpg"><source src="img/hero-truck.mp4" type="video/mp4"></video></div>
+    <div class="slide-inner"><h2>INWOO ENC</h2><p>길을 이어 가치를 더하는 기업</p><a class="btn-more" href="about.html">more view</a></div>
+  </div>
+  <div class="slide">
+    <div class="slide-bg"><img src="img/hero.jpg" alt=""></div>
+    <div class="slide-inner"><h2>경험과 신뢰</h2><p>PAVEMENT 산업의 경험과 신뢰를 바탕으로 미래를 만들어가는 인우이엔씨</p><a class="btn-more" href="about.html">more view</a></div>
+  </div>
+  <div class="slide">
+    <div class="slide-bg"><img src="img/banner.jpg" alt="" style="object-position:center 35%"></div>
+    <div class="slide-inner"><h2>함께 성장</h2><p>고객과 함께 성장하는 기업이 되겠습니다</p><a class="btn-more" href="business.html">more view</a></div>
+  </div>
+  <button class="hero-arrow prev" aria-label="이전">‹</button><button class="hero-arrow next" aria-label="다음">›</button>
+  <div class="hero-dots"><button class="on" aria-label="1번"></button><button aria-label="2번"></button><button aria-label="3번"></button></div>
+  <div class="scroll-down">SCROLL DOWN</div>
+</section>
 
-  <section class="hero" id="home">
-    <div class="hero-bg" aria-hidden="true">
-      <video autoplay muted loop playsinline poster="img/hero.jpg">
-        <source src="img/hero-truck.mp4" type="video/mp4">
-      </video>
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content" data-aos="fade-up">
-      <span class="hero-tagline">INWOO ENC</span>
-      <span class="hero-subline">길을 이어 가치를 더하는 기업</span>
-    </div>
-  </section>
+<section class="fs fs-company">
+  <div class="fs-inner rv">
+    <h2 class="fs-title en">INWOO ENC <em>Company</em></h2>
+    <p class="fs-text">산업의 중심에서 신뢰를 쌓아온 인우이엔씨<br>PAVEMENT 산업의 든든한 파트너로 고객과 함께 성장합니다.</p>
+    <a class="btn-more" href="about.html">more view</a>
+  </div>
+</section>
 
-  <section class="intro-photo">
-    <div class="intro-photo-inner" data-aos="fade-up">
-      <img class="intro-photo-img" src="img/hero-arrow.jpg" alt="아스팔트 도로 위 노란색 화살표 표지">
-      <h2 class="intro-photo-heading">PAVEMENT 산업의 경험과 신뢰를<br>바탕으로 미래를 만들어가는 인우이엔씨</h2>
-      <a href="about.html" class="btn-more">자세히 보기</a>
+<section class="fs fs-business">
+  <div class="fs-inner">
+    <div class="rv">
+      <h2 class="fs-title en">INWOO ENC <em>Business</em></h2>
+      <p class="fs-text">Asphalt와 Viatop 유통부터 Asphalt Concrete 제조까지,<br>PAVEMENT 산업을 중심으로 사업을 영위합니다.</p>
     </div>
-  </section>
-
-  <section class="features">
-    <div class="features-inner">
-      <div class="feature" data-aos="fade-up">
-        <h3>깊이 있는 산업 전문성</h3>
-        <p>1999년 창립 이후 Asphalt 및 Viatop 유통부터 Asphalt Concrete 제조에 이르기까지 한 분야를 꾸준히 축적해온 실무 중심의 전문성을 보유하고 있습니다.</p>
-      </div>
-      <div class="feature" data-aos="fade-up" data-aos-delay="100">
-        <h3>고객과의 신뢰</h3>
-        <p>오랜 기간 국내외 다양한 기업과 협력하며 안정적인 품질과 책임 있는 대응을 통해 고객과의 신뢰를 최우선 가치로 이어가고 있습니다.</p>
-      </div>
-      <div class="feature" data-aos="fade-up" data-aos-delay="200">
-        <h3>지속적인 성장</h3>
-        <p>Asphalt 판매·유통 경험을 통해 Pavement 산업으로 사업 영역을 확장하여 미래를 향한 지속적인 성장을 실현하고 있습니다.</p>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <div class="footer-logo">INWOO ENC CO., LTD</div>
-      <img class="footer-logo-mark" src="img/logo-gray.png" alt="INWOO ENC">
-    </div>
-    <div class="footer-right">
-      <p>(주)인우이엔씨 &nbsp;|&nbsp; 대표자: 이지익 &nbsp;|&nbsp; 사업자등록번호: 312-81-35304</p>
-      <p>서울시 영등포구 버드나루로 84, 제일빌딩 16층</p>
-      <p>대표전화 02-2676-2539 &nbsp;|&nbsp; 팩스 02-2676-2855</p>
+    <div class="biz-items">
+      <div class="biz-item rv"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 40V24l11 6v-6l11 6v-6l11 6V8h5v32z"/><path d="M5 40h38"/></svg><h3>Asphalt Concrete</h3><p>아스콘 제조·판매</p><a class="btn-more" href="business.html#ascon">more view</a></div>
+      <div class="biz-item rv d1"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="12" rx="13" ry="5"/><path d="M11 12v24c0 2.8 5.8 5 13 5s13-2.2 13-5V12"/><path d="M11 24c0 2.8 5.8 5 13 5s13-2.2 13-5"/></svg><h3>Asphalt</h3><p>SK에너지 판매대리점</p><a class="btn-more" href="business.html#asphalt">more view</a></div>
+      <div class="biz-item rv d2"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M19 6h10M21 6v14L9 38c-1 2 0 4 2.4 4h25.2c2.4 0 3.4-2 2.4-4L27 20V6"/><path d="M14 31h20"/></svg><h3>Viatop</h3><p>JRS社 수입·유통</p><a class="btn-more" href="business.html#viatop">more view</a></div>
     </div>
   </div>
-  <div class="footer-inner"><p class="footer-copy">© 2026 INWOO ENC CO., LTD. All rights reserved.</p></div>
-</footer>
+</section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/script.js"></script>
+<section class="fs fs-people">
+  <div class="fs-inner">
+    <div class="rv">
+      <h2 class="fs-title en">INWOO ENC <em>People</em></h2>
+      <p class="fs-text">회사를 만들어 가는 것은 사람입니다.</p>
+    </div>
+    <div class="people-items">
+      <a class="people-item rv" href="people.html"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="15" r="7"/><path d="M10 40c0-8 6-13 14-13s14 5 14 13"/></svg><h3>인재상</h3><p>적극성 · 창의성 · 협업성</p></a>
+      <a class="people-item rv d1" href="welfare.html"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="20" width="32" height="20" rx="2"/><path d="M8 27h32M24 20v20"/><path d="M24 20c-2-6-6-8-9-6-3 2-1 6 3 6M24 20c2-6 6-8 9-6 3 2 1 6-3 6"/></svg><h3>복지제도</h3><p>임직원과 함께 성장합니다</p></a>
+      <a class="people-item rv d2" href="about.html#location"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42s-13-12-13-22a13 13 0 0 1 26 0c0 10-13 22-13 22z"/><circle cx="24" cy="20" r="5"/></svg><h3>오시는 길</h3><p>본사 · 인천공장</p></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div class="footer-logo">INWOO ENC CO., LTD<br><img src="img/logo.png" alt=""></div>
+      <div class="footer-links"><a href="about.html#location">오시는 길</a></div>
+    </div>
+    <div class="footer-info">
+      <div>
+        <strong>(주)인우이엔씨</strong> &nbsp;|&nbsp; 대표자: 이지익 &nbsp;|&nbsp; 사업자등록번호: 312-81-35304<br>
+        서울시 영등포구 버드나루로 84, 제일빌딩 16층<br>
+        대표전화 02-2676-2539 &nbsp;|&nbsp; 팩스 02-2676-2855
+      </div>
+      <div class="footer-copy">© 2026 INWOO ENC CO., LTD. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js?v=4"></script>
 </body>
 </html>

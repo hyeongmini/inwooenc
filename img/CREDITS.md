@@ -9,6 +9,6 @@
 | biz-viatop.jpg | https://unsplash.com/photos/5-LBYIucVGM |
 | biz-banner.jpg | https://unsplash.com/photos/wVb74uyGWlk |
 | about-overview.jpg | https://unsplash.com/photos/p8XyPr3uN_o |
-| value-1.jpg | https://unsplash.com/photos/bqYjvTeK2s0 |
-| value-2.jpg | https://unsplash.com/photos/0dhIl78b__o |
+| value-1.jpg | https://unsplash.com/photos/333oj7zFsdg |
+| value-2.jpg | https://unsplash.com/photos/qCDmRM9fU3g |
 | value-3.jpg | https://unsplash.com/photos/_XeQ8XEWb4Q |
